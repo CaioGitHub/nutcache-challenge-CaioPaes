@@ -22,7 +22,7 @@
     bottom: 0.5px;
     left: 1px;
     border-radius: 8px;
-    background: linear-gradient(45deg, #8e2de2, #4a00a0);
+    background: linear-gradient(45deg, #4a00a0, #8e2de2 );
 }
 
 .popuparea{
@@ -49,3 +49,4 @@
     
     
 }
+

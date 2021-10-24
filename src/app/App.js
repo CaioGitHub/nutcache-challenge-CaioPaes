@@ -2,7 +2,7 @@ import '../styles/app.css'
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import people from '../pages/Home';
+import People from '../pages/Home/index';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <div className="App">
 
         <Switch>
-          <Route path="/" exact component={people} />
+          <Route path="/" exact component={People} />
         </Switch>
 
       </div>

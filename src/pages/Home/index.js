@@ -1,11 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './style.css'
-
+import { Form } from '@unform/web'
 
 
 import Button from 'react-bootstrap/Button'
 
+import Input from '../../components/Form/input'
+
 const People = () => {
+
+    const formRef = useRef(null);
+
+    function handleSubmit(data){
+        if(data.name === "") {
+            formRef.current.setFieldError('name', 'O nome é obrigatório')
+        }
+        console.log(data);
+    }
 
     const [click, setClick] = useState(false)
 
@@ -24,11 +35,23 @@ const People = () => {
                     <h2>People List</h2>
                     <form action="">
                         <div className="btn1">
-                            <Button onClick={handleButton} variant="primary" >Primary</Button>{' '}
+                            <Button onClick={handleButton}>Cadastrar</Button>{' '}
                             {click ? (
                                 <div className="popuparea">
                                     <div 
                                         className="popup">
+                                            <Form ref={formRef} onSubmit={handleSubmit}>
+
+                                                <Input name="name" />
+                                                <Input name="birthDate" />
+                                                <Input name="gender" />
+                                                <Input type="email" name="email" />
+                                                <Input name="cpf" />
+                                                <Input name="startDate" />     
+
+                                                <button type="submit">Enviar</button>                                           
+
+                                            </Form>
                                             <button onClick={()=>setClick(false)}>fechar</button>
 
                                     </div>
