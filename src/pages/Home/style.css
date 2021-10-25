@@ -4,7 +4,7 @@
     min-height: 40vh;
     padding: 4rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    border-radius: 8px;    
 }
 
 .container h2 {
@@ -12,6 +12,7 @@
     margin-top: -1rem;
     margin-bottom: 2rem;
     position: relative;
+    text-align: center;
 }
 
 .container h2::before {
@@ -20,9 +21,31 @@
     height: 3px;
     width: 42px;
     bottom: 0.5px;
-    left: 1px;
+    left: 12px;
     border-radius: 8px;
     background: linear-gradient(45deg, #4a00a0, #8e2de2 );
+}
+
+.btn1 {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.ui-button {
+    border-radius: 4px;
+    color: white;
+    background-color: #5d20a3;
+    text-decoration: none;
+    padding: 8px 10px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: ease background-color 250ms;
+    width: 150px;
+    height: 40px;
+}
+
+.ui-button:hover {
+    background: linear-gradient(0deg, #4a00a0, #8e2de2 );
 }
 
 .popuparea{
@@ -40,13 +63,137 @@
 }
 
 .popup{
+    position: absolute;
     border: 1px solid rgb(144, 143, 143);
     border-radius: 2%;
     height: 400px;
-    width: 200px;
+    width: 450px;
+    top: 140px;
     background-color: white;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-    
-    
 }
 
+.box {
+    margin-top: 30px;
+}
+
+.date {
+    width: 160px;
+    height: 56px;
+    padding: 16.5px 14px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.2) ;    
+}
+
+.date:hover {
+    border: 1px solid black ;
+}
+
+.btngeral {
+    border-radius: 4px;
+    color: white;
+    background-color: #5d20a3;
+    text-decoration: none;
+    padding: 8px 10px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: ease background-color 250ms;
+    position: relative;
+    top: 30px;
+}
+
+.btngeral:hover {
+    background-color: #8e2de2;
+}
+
+.btnclose {
+    
+    border-radius: 4px;
+    color: white;
+    background-color: #5d20a3;
+    text-decoration: none;
+    padding: 8px 10px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: ease background-color 250ms;
+    position: relative;
+    top: 30px;
+}
+
+.btnclose:hover {
+    background-color: #8e2de2;
+}
+
+.popupareadelete {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupdelete {
+    
+    position: absolute;
+    border: 1px solid rgb(144, 143, 143);
+    border-radius: 2%;
+    height: 250px;
+    width: 250px;
+    top: 140px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.txtdelete {
+    margin-top: 30px;
+}
+
+
+.popuparealist {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popuplist {  
+    position: absolute;
+    border: 1px solid rgb(144, 143, 143);
+    border-radius: 2%;
+    height: 450px;
+    width: 550px;
+    top: 90px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.txtlist {
+    font-size: 15px;  
+    width: 550px;
+    height: 50px;
+    position:relative;
+    justify-content:space-between;
+    margin: 5px;
+    white-space: nowrap;
+}
+
+.btncloselist {
+    position:relative;
+    
+    top: 300px;
+}
